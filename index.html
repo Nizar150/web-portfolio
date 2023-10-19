@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+  
+    </nav>
+    <div class="header-text">
+        <p> Welcome to my website</p>
+    <h1>Hi, I'm Nizar El Harrouni From Morocco</h1>
+    </div>
+    
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="img1.png">
+</div>
+<div class="about-col-2">
+<h1>About Me</h1>
+<p>I am a student engineer in land surveying and geomatics, with a deep-seated curiosity for the world and a fervor for learning.I am passionate about new technologies and computer vision,Beyond my technical interests, I’m always ready to lend a helping hand or offer support wherever it’s needed. Whether it’s collaborating on exciting projects, sharing knowledge, or contributing to meaningful initiatives, I’m here to make a positive impact.
+
+
+    
+    .</p>
+    <!-- <a href="cv Nizar EL HARROUNI.pdf" download="resume.pdf"class="my-custom-button">
+        <button>Download Resume</button> -->
+        <div>
+            <a href="cv Nizar EL HARROUNI.pdf" download="resume.pdf" class="btn" >Download CV</a>
+           
+        </div>
+        
+
+    </a>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick ="opentab('skills')">skills<p>
+    <p class="tab-links"onclick ="opentab('experience')">Experience</p>
+    <p class="tab-links" onclick ="opentab('education')">Education</p>
+
+    </div>
+
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Geospatial Analysis: Proficient in analyzing </span><br>and interpreting geospatial data using GIS </li>
+                <li><span>Project management</span><br>Team work and adapation skills</li>
+                <li><span>Remote sensing and computer vision</span><br>Building responsive app for 3d visualisation</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+               
+                <li><span>-2023 internship in Terra Modus a land surveying and real estate appraisal</span><br></li>
+                <li><span>-2022 Internshi in Preci Topo a civil engineering company</span><br></li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>-Ing. in Geomatics and Surveying Engineering, IAVH2</span><br></li>
+                <li><span>-Science bachelor degree</span><br></li>
+              
+            </ul>
+            <div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks= document. getElementsByClassName( "tab-links " ) ;
+    
+    var tabcontents= document. getElementsByClassName( "tab-contents" ) 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink. classList. remove( "active-link" ) ;
+        } 
+        for (tabcontent of tabcontents ){           
+             tabcontent. classList. remove( "active-tab" ) ;      
+        }
+        event.currentTarget. classList. add( "active-link" ) ;
+        document. getElementById(tabname). classList. add( "active-tab" ) ;
+
+    }    
+    function openWork(tabname) {
+  var tablinks1 = document.getElementsByClassName("tab-link1");
+  var tabcontents1 = document.getElementsByClassName("tab-contents1");
+  for (var i = 0; i < tablinks1.length; i++) {
+    tablinks1[i].classList.remove("active-link");
+  }
+  for (var i = 0; i < tabcontents1.length; i++) {
+    tabcontents1[i].classList.remove("active-tab");
+  }
+  document.getElementById(tabname).classList.add("active-tab");
+  event.currentTarget.classList.add("active-link");
+}  
+</script>
+
+
+
+<div id="work">
+    <div class="container">
+        <div class="tab-titles1">
+            <p class="tab-links1 active-link" onclick="openWork('work1')"> Project iot</p>
+            <p class="tab-links1" onclick="openWork('work2')">Poject ANISKELS</p>
+            <p class="tab-links1" onclick="openWork('work3')">Geodesic Project</p>
+            <p class="tab-links1" onclick="openWork('soon')">comming soon</p>
+        </div>
+
+
+        <div class="tab-contents1 active-tab" id="work1">
+            <div class="work">
+                <img src="1686690414016.jpg">
+                <div class="layer">
+                    <h3 style="margin-bottom: 10px;">Projet iot</h3>
+                    <p style="margin-top: 0;display:block;">We managed to create a physical model related and connected to its 3D digital model and responsive to sensors like temperature, humidity, or movement.</p>
+                    <a href="https://www.linkedin.com/pulse/next-frontier-embracing-digital-twin-topography-department-hiba-doi?utm_source=share&utm_medium=member_android&utm_campaign=share_via" class="button" target="_blank">Click me</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-contents1" id="work2">
+            <div class="work">
+                <img src="2.jpg">
+                <div class="layer">
+                    <h3 style="margin-bottom: 10px;">Projet 3D</h3>
+                    <p style="margin-top: 0;display:block;">We managed to scan existing bone and skelton of horses reconstruct them using photogrametry process and lidar technologies to give the possibility to the user to have a full immerssive experience via vr/ar.</p>
+                    <a href="https://nizar150.github.io/Ani-Skels-3D/" class="button" target="_blank">Click me</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-contents1" id="work3">
+            <div class="work">
+                <img src="Sans titre.png">
+                <div class="layer">
+                    <h3 style="margin-bottom: 10px;">Geodesic Project</h3>
+                    <p style="margin-top: 0;display:block;">We managed to create a program to transform coordinates and visualise on an ellipsoid <br>and know the location of any given coordinate</p>
+                    <a href="https://github.com/Nizar150/cooridnate-transformation"class="button" target="_blank">Click me</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-contents1" id="soon">
+            <div class="work">
+                <img src="toy-story-buzz-lightyear.gif">
+                <p><a href="https://giphy.com/gifs/buzz-lightyear-12R2bKfxceemNq">via GIPHY</a></p>
+              </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  
+        <div id="contact">
+            <div class="container">
+            <div class="row"
+            <div class="contact-left">
+            <hl class="sub-tit1e">Contact Me</hl>
+            <p>nizarelharrouni@gmail.com</p>
+            <p>06666892938</p>
+            <!-- <div class="social-icons">
+  
+          <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/nizar-el-harrouni-8ba701202/" target="_blank">
+                    <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                </a> 
+                  <li class="icon github">
+                    <a href="https://github.com/Nizar150" target="_blank">
+                    
+                
+                <span><i class="fab fa-github"></i></span>
+                </li>
+                </a> -->
+                <!-- <a href="http://www.instagram.com/" target="_blank">
+                  <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                </a>
+                <a href="http://www.gmail.com/" target="_blank">
+                  <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"> 
+                </a> 
+               -->
+              <!-- </div>
+            </div> --> 
+            <div class="social-icon">
+                <ul>
+                <li> <a href="https://github.com/Nizar150"target="_blank"> <i cLass="fab fa-github"></i></a> </li>
+          
+                <li>  <a href="http://www.gmail.com/" target="_blank">
+                    <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                </li>
+                <li> <a href="https://www.linkedin.com/in/nizar-el-harrouni-8ba701202/" target="_blank"> <i cLass="fab fa-linkedin"></i></a> </li>
+                <p style="margin-top: 20px;">For any inquiry, question or work request, do not hesitate to contact me.</p>
+            
+          </div>
+          
+
+</body>
